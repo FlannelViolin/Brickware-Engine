@@ -10,14 +10,12 @@ cbuffer perModel : register(b0)
 	matrix viewMatrix;
 	matrix projectionMatrix;
 
-	
 	float3 lightPosition;
 
 	texture2D tex;
 
 	float3 lookAt;
 	float3 eyePoint;
-	
 };
 
 // Defines what kind of data to expect as input
@@ -35,7 +33,10 @@ struct VertexShaderInput
 struct VertexToPixel
 {
 	float4 position		: SV_POSITION; // System Value Position - Has specific meaning to the pipeline!
-	float4 color		: COLOR;
+	float3 L : LIGHT_L;
+	float3 E : LIGHT_E;
+	float3 H : LIGHT_H;
+	float3 N : LIGHT_N;
 };
 
 // The entry point for our vertex shader
@@ -48,8 +49,30 @@ VertexToPixel main(VertexShaderInput input)
 	matrix modelViewProj = mul(mul(modelMatrix, viewMatrix), projectionMatrix);
 	output.position = mul(float4(input.position, 1.0f), modelViewProj);
 
-	// Pass the color through - will be interpolated per-pixel by the rasterizer
-	output.color = float4(0.0f, 1.0f, 0.0f, 1.0f);
+	//try to do some lighting
+	float4 worldCoord4v = mul(modelMatrix, float4(input.position, 1.0f));
+	float3 worldCoord3v = float3(worldCoord4v.x / worldCoord4v.w,
+								 worldCoord4v.y / worldCoord4v.w,
+								 worldCoord4v.z / worldCoord4v.w);
+
+	matrix rotation = matrix(modelMatrix[0][0], modelMatrix[1][0], modelMatrix[2][0], 0,
+							 modelMatrix[0][1], modelMatrix[1][1], modelMatrix[2][1], 0,
+							 modelMatrix[0][2], modelMatrix[1][2], modelMatrix[2][2], 0,
+							 0, 0, 0, 1);
+	float4 worldNormal4v = mul(rotation,  float4(input.normal, 1.0));
+	float3 worldNormal3v = float3(worldNormal4v.x / worldNormal4v.w,
+								  worldNormal4v.y / worldNormal4v.w,
+								  worldNormal4v.z / worldNormal4v.w);
+
+	float3 L = normalize(lightPosition - worldCoord3v);
+	float3 E = normalize(eyePoint - worldCoord3v);
+	float3 H = normalize(L + E);
+	float3 N = normalize(worldNormal3v);
+
+	output.L = L;
+	output.E = E;
+	output.H = H;
+	output.N = N;
 
 	return output;
 }
