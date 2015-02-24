@@ -1,0 +1,1 @@
+/home/amt3824/Git/Brickware-Engine/build/BrickwareMath/CMakeFiles/BrickwareMath.dir
