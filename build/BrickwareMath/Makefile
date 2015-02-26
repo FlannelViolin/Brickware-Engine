@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/amt3824/Git/Brickware-Engine
+CMAKE_SOURCE_DIR = /home/arsen/Code/Brickware-Engine
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/amt3824/Git/Brickware-Engine/build
+CMAKE_BINARY_DIR = /home/arsen/Code/Brickware-Engine/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -114,14 +114,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/amt3824/Git/Brickware-Engine/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/amt3824/Git/Brickware-Engine/build/CMakeFiles /home/amt3824/Git/Brickware-Engine/build/BrickwareMath/CMakeFiles/progress.marks
-	cd /home/amt3824/Git/Brickware-Engine/build && $(MAKE) -f CMakeFiles/Makefile2 BrickwareMath/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/amt3824/Git/Brickware-Engine/build/CMakeFiles 0
+	cd /home/arsen/Code/Brickware-Engine/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/arsen/Code/Brickware-Engine/build/CMakeFiles /home/arsen/Code/Brickware-Engine/build/BrickwareMath/CMakeFiles/progress.marks
+	cd /home/arsen/Code/Brickware-Engine/build && $(MAKE) -f CMakeFiles/Makefile2 BrickwareMath/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/arsen/Code/Brickware-Engine/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/amt3824/Git/Brickware-Engine/build && $(MAKE) -f CMakeFiles/Makefile2 BrickwareMath/clean
+	cd /home/arsen/Code/Brickware-Engine/build && $(MAKE) -f CMakeFiles/Makefile2 BrickwareMath/clean
 .PHONY : clean
 
 # The main clean target
@@ -130,22 +130,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/amt3824/Git/Brickware-Engine/build && $(MAKE) -f CMakeFiles/Makefile2 BrickwareMath/preinstall
+	cd /home/arsen/Code/Brickware-Engine/build && $(MAKE) -f CMakeFiles/Makefile2 BrickwareMath/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/amt3824/Git/Brickware-Engine/build && $(MAKE) -f CMakeFiles/Makefile2 BrickwareMath/preinstall
+	cd /home/arsen/Code/Brickware-Engine/build && $(MAKE) -f CMakeFiles/Makefile2 BrickwareMath/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/amt3824/Git/Brickware-Engine/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/arsen/Code/Brickware-Engine/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 BrickwareMath/CMakeFiles/BrickwareMath.dir/rule:
-	cd /home/amt3824/Git/Brickware-Engine/build && $(MAKE) -f CMakeFiles/Makefile2 BrickwareMath/CMakeFiles/BrickwareMath.dir/rule
+	cd /home/arsen/Code/Brickware-Engine/build && $(MAKE) -f CMakeFiles/Makefile2 BrickwareMath/CMakeFiles/BrickwareMath.dir/rule
 .PHONY : BrickwareMath/CMakeFiles/BrickwareMath.dir/rule
 
 # Convenience name for target.
@@ -154,7 +154,7 @@ BrickwareMath: BrickwareMath/CMakeFiles/BrickwareMath.dir/rule
 
 # fast build rule for target.
 BrickwareMath/fast:
-	cd /home/amt3824/Git/Brickware-Engine/build && $(MAKE) -f BrickwareMath/CMakeFiles/BrickwareMath.dir/build.make BrickwareMath/CMakeFiles/BrickwareMath.dir/build
+	cd /home/arsen/Code/Brickware-Engine/build && $(MAKE) -f BrickwareMath/CMakeFiles/BrickwareMath.dir/build.make BrickwareMath/CMakeFiles/BrickwareMath.dir/build
 .PHONY : BrickwareMath/fast
 
 src/Matrix3.o: src/Matrix3.cpp.o
@@ -162,7 +162,7 @@ src/Matrix3.o: src/Matrix3.cpp.o
 
 # target to build an object file
 src/Matrix3.cpp.o:
-	cd /home/amt3824/Git/Brickware-Engine/build && $(MAKE) -f BrickwareMath/CMakeFiles/BrickwareMath.dir/build.make BrickwareMath/CMakeFiles/BrickwareMath.dir/src/Matrix3.cpp.o
+	cd /home/arsen/Code/Brickware-Engine/build && $(MAKE) -f BrickwareMath/CMakeFiles/BrickwareMath.dir/build.make BrickwareMath/CMakeFiles/BrickwareMath.dir/src/Matrix3.cpp.o
 .PHONY : src/Matrix3.cpp.o
 
 src/Matrix3.i: src/Matrix3.cpp.i
@@ -170,7 +170,7 @@ src/Matrix3.i: src/Matrix3.cpp.i
 
 # target to preprocess a source file
 src/Matrix3.cpp.i:
-	cd /home/amt3824/Git/Brickware-Engine/build && $(MAKE) -f BrickwareMath/CMakeFiles/BrickwareMath.dir/build.make BrickwareMath/CMakeFiles/BrickwareMath.dir/src/Matrix3.cpp.i
+	cd /home/arsen/Code/Brickware-Engine/build && $(MAKE) -f BrickwareMath/CMakeFiles/BrickwareMath.dir/build.make BrickwareMath/CMakeFiles/BrickwareMath.dir/src/Matrix3.cpp.i
 .PHONY : src/Matrix3.cpp.i
 
 src/Matrix3.s: src/Matrix3.cpp.s
@@ -178,7 +178,7 @@ src/Matrix3.s: src/Matrix3.cpp.s
 
 # target to generate assembly for a file
 src/Matrix3.cpp.s:
-	cd /home/amt3824/Git/Brickware-Engine/build && $(MAKE) -f BrickwareMath/CMakeFiles/BrickwareMath.dir/build.make BrickwareMath/CMakeFiles/BrickwareMath.dir/src/Matrix3.cpp.s
+	cd /home/arsen/Code/Brickware-Engine/build && $(MAKE) -f BrickwareMath/CMakeFiles/BrickwareMath.dir/build.make BrickwareMath/CMakeFiles/BrickwareMath.dir/src/Matrix3.cpp.s
 .PHONY : src/Matrix3.cpp.s
 
 src/Matrix4.o: src/Matrix4.cpp.o
@@ -186,7 +186,7 @@ src/Matrix4.o: src/Matrix4.cpp.o
 
 # target to build an object file
 src/Matrix4.cpp.o:
-	cd /home/amt3824/Git/Brickware-Engine/build && $(MAKE) -f BrickwareMath/CMakeFiles/BrickwareMath.dir/build.make BrickwareMath/CMakeFiles/BrickwareMath.dir/src/Matrix4.cpp.o
+	cd /home/arsen/Code/Brickware-Engine/build && $(MAKE) -f BrickwareMath/CMakeFiles/BrickwareMath.dir/build.make BrickwareMath/CMakeFiles/BrickwareMath.dir/src/Matrix4.cpp.o
 .PHONY : src/Matrix4.cpp.o
 
 src/Matrix4.i: src/Matrix4.cpp.i
@@ -194,7 +194,7 @@ src/Matrix4.i: src/Matrix4.cpp.i
 
 # target to preprocess a source file
 src/Matrix4.cpp.i:
-	cd /home/amt3824/Git/Brickware-Engine/build && $(MAKE) -f BrickwareMath/CMakeFiles/BrickwareMath.dir/build.make BrickwareMath/CMakeFiles/BrickwareMath.dir/src/Matrix4.cpp.i
+	cd /home/arsen/Code/Brickware-Engine/build && $(MAKE) -f BrickwareMath/CMakeFiles/BrickwareMath.dir/build.make BrickwareMath/CMakeFiles/BrickwareMath.dir/src/Matrix4.cpp.i
 .PHONY : src/Matrix4.cpp.i
 
 src/Matrix4.s: src/Matrix4.cpp.s
@@ -202,7 +202,7 @@ src/Matrix4.s: src/Matrix4.cpp.s
 
 # target to generate assembly for a file
 src/Matrix4.cpp.s:
-	cd /home/amt3824/Git/Brickware-Engine/build && $(MAKE) -f BrickwareMath/CMakeFiles/BrickwareMath.dir/build.make BrickwareMath/CMakeFiles/BrickwareMath.dir/src/Matrix4.cpp.s
+	cd /home/arsen/Code/Brickware-Engine/build && $(MAKE) -f BrickwareMath/CMakeFiles/BrickwareMath.dir/build.make BrickwareMath/CMakeFiles/BrickwareMath.dir/src/Matrix4.cpp.s
 .PHONY : src/Matrix4.cpp.s
 
 src/Quaternion.o: src/Quaternion.cpp.o
@@ -210,7 +210,7 @@ src/Quaternion.o: src/Quaternion.cpp.o
 
 # target to build an object file
 src/Quaternion.cpp.o:
-	cd /home/amt3824/Git/Brickware-Engine/build && $(MAKE) -f BrickwareMath/CMakeFiles/BrickwareMath.dir/build.make BrickwareMath/CMakeFiles/BrickwareMath.dir/src/Quaternion.cpp.o
+	cd /home/arsen/Code/Brickware-Engine/build && $(MAKE) -f BrickwareMath/CMakeFiles/BrickwareMath.dir/build.make BrickwareMath/CMakeFiles/BrickwareMath.dir/src/Quaternion.cpp.o
 .PHONY : src/Quaternion.cpp.o
 
 src/Quaternion.i: src/Quaternion.cpp.i
@@ -218,7 +218,7 @@ src/Quaternion.i: src/Quaternion.cpp.i
 
 # target to preprocess a source file
 src/Quaternion.cpp.i:
-	cd /home/amt3824/Git/Brickware-Engine/build && $(MAKE) -f BrickwareMath/CMakeFiles/BrickwareMath.dir/build.make BrickwareMath/CMakeFiles/BrickwareMath.dir/src/Quaternion.cpp.i
+	cd /home/arsen/Code/Brickware-Engine/build && $(MAKE) -f BrickwareMath/CMakeFiles/BrickwareMath.dir/build.make BrickwareMath/CMakeFiles/BrickwareMath.dir/src/Quaternion.cpp.i
 .PHONY : src/Quaternion.cpp.i
 
 src/Quaternion.s: src/Quaternion.cpp.s
@@ -226,7 +226,7 @@ src/Quaternion.s: src/Quaternion.cpp.s
 
 # target to generate assembly for a file
 src/Quaternion.cpp.s:
-	cd /home/amt3824/Git/Brickware-Engine/build && $(MAKE) -f BrickwareMath/CMakeFiles/BrickwareMath.dir/build.make BrickwareMath/CMakeFiles/BrickwareMath.dir/src/Quaternion.cpp.s
+	cd /home/arsen/Code/Brickware-Engine/build && $(MAKE) -f BrickwareMath/CMakeFiles/BrickwareMath.dir/build.make BrickwareMath/CMakeFiles/BrickwareMath.dir/src/Quaternion.cpp.s
 .PHONY : src/Quaternion.cpp.s
 
 src/Vector2.o: src/Vector2.cpp.o
@@ -234,7 +234,7 @@ src/Vector2.o: src/Vector2.cpp.o
 
 # target to build an object file
 src/Vector2.cpp.o:
-	cd /home/amt3824/Git/Brickware-Engine/build && $(MAKE) -f BrickwareMath/CMakeFiles/BrickwareMath.dir/build.make BrickwareMath/CMakeFiles/BrickwareMath.dir/src/Vector2.cpp.o
+	cd /home/arsen/Code/Brickware-Engine/build && $(MAKE) -f BrickwareMath/CMakeFiles/BrickwareMath.dir/build.make BrickwareMath/CMakeFiles/BrickwareMath.dir/src/Vector2.cpp.o
 .PHONY : src/Vector2.cpp.o
 
 src/Vector2.i: src/Vector2.cpp.i
@@ -242,7 +242,7 @@ src/Vector2.i: src/Vector2.cpp.i
 
 # target to preprocess a source file
 src/Vector2.cpp.i:
-	cd /home/amt3824/Git/Brickware-Engine/build && $(MAKE) -f BrickwareMath/CMakeFiles/BrickwareMath.dir/build.make BrickwareMath/CMakeFiles/BrickwareMath.dir/src/Vector2.cpp.i
+	cd /home/arsen/Code/Brickware-Engine/build && $(MAKE) -f BrickwareMath/CMakeFiles/BrickwareMath.dir/build.make BrickwareMath/CMakeFiles/BrickwareMath.dir/src/Vector2.cpp.i
 .PHONY : src/Vector2.cpp.i
 
 src/Vector2.s: src/Vector2.cpp.s
@@ -250,7 +250,7 @@ src/Vector2.s: src/Vector2.cpp.s
 
 # target to generate assembly for a file
 src/Vector2.cpp.s:
-	cd /home/amt3824/Git/Brickware-Engine/build && $(MAKE) -f BrickwareMath/CMakeFiles/BrickwareMath.dir/build.make BrickwareMath/CMakeFiles/BrickwareMath.dir/src/Vector2.cpp.s
+	cd /home/arsen/Code/Brickware-Engine/build && $(MAKE) -f BrickwareMath/CMakeFiles/BrickwareMath.dir/build.make BrickwareMath/CMakeFiles/BrickwareMath.dir/src/Vector2.cpp.s
 .PHONY : src/Vector2.cpp.s
 
 src/Vector3.o: src/Vector3.cpp.o
@@ -258,7 +258,7 @@ src/Vector3.o: src/Vector3.cpp.o
 
 # target to build an object file
 src/Vector3.cpp.o:
-	cd /home/amt3824/Git/Brickware-Engine/build && $(MAKE) -f BrickwareMath/CMakeFiles/BrickwareMath.dir/build.make BrickwareMath/CMakeFiles/BrickwareMath.dir/src/Vector3.cpp.o
+	cd /home/arsen/Code/Brickware-Engine/build && $(MAKE) -f BrickwareMath/CMakeFiles/BrickwareMath.dir/build.make BrickwareMath/CMakeFiles/BrickwareMath.dir/src/Vector3.cpp.o
 .PHONY : src/Vector3.cpp.o
 
 src/Vector3.i: src/Vector3.cpp.i
@@ -266,7 +266,7 @@ src/Vector3.i: src/Vector3.cpp.i
 
 # target to preprocess a source file
 src/Vector3.cpp.i:
-	cd /home/amt3824/Git/Brickware-Engine/build && $(MAKE) -f BrickwareMath/CMakeFiles/BrickwareMath.dir/build.make BrickwareMath/CMakeFiles/BrickwareMath.dir/src/Vector3.cpp.i
+	cd /home/arsen/Code/Brickware-Engine/build && $(MAKE) -f BrickwareMath/CMakeFiles/BrickwareMath.dir/build.make BrickwareMath/CMakeFiles/BrickwareMath.dir/src/Vector3.cpp.i
 .PHONY : src/Vector3.cpp.i
 
 src/Vector3.s: src/Vector3.cpp.s
@@ -274,7 +274,7 @@ src/Vector3.s: src/Vector3.cpp.s
 
 # target to generate assembly for a file
 src/Vector3.cpp.s:
-	cd /home/amt3824/Git/Brickware-Engine/build && $(MAKE) -f BrickwareMath/CMakeFiles/BrickwareMath.dir/build.make BrickwareMath/CMakeFiles/BrickwareMath.dir/src/Vector3.cpp.s
+	cd /home/arsen/Code/Brickware-Engine/build && $(MAKE) -f BrickwareMath/CMakeFiles/BrickwareMath.dir/build.make BrickwareMath/CMakeFiles/BrickwareMath.dir/src/Vector3.cpp.s
 .PHONY : src/Vector3.cpp.s
 
 src/Vector4.o: src/Vector4.cpp.o
@@ -282,7 +282,7 @@ src/Vector4.o: src/Vector4.cpp.o
 
 # target to build an object file
 src/Vector4.cpp.o:
-	cd /home/amt3824/Git/Brickware-Engine/build && $(MAKE) -f BrickwareMath/CMakeFiles/BrickwareMath.dir/build.make BrickwareMath/CMakeFiles/BrickwareMath.dir/src/Vector4.cpp.o
+	cd /home/arsen/Code/Brickware-Engine/build && $(MAKE) -f BrickwareMath/CMakeFiles/BrickwareMath.dir/build.make BrickwareMath/CMakeFiles/BrickwareMath.dir/src/Vector4.cpp.o
 .PHONY : src/Vector4.cpp.o
 
 src/Vector4.i: src/Vector4.cpp.i
@@ -290,7 +290,7 @@ src/Vector4.i: src/Vector4.cpp.i
 
 # target to preprocess a source file
 src/Vector4.cpp.i:
-	cd /home/amt3824/Git/Brickware-Engine/build && $(MAKE) -f BrickwareMath/CMakeFiles/BrickwareMath.dir/build.make BrickwareMath/CMakeFiles/BrickwareMath.dir/src/Vector4.cpp.i
+	cd /home/arsen/Code/Brickware-Engine/build && $(MAKE) -f BrickwareMath/CMakeFiles/BrickwareMath.dir/build.make BrickwareMath/CMakeFiles/BrickwareMath.dir/src/Vector4.cpp.i
 .PHONY : src/Vector4.cpp.i
 
 src/Vector4.s: src/Vector4.cpp.s
@@ -298,7 +298,7 @@ src/Vector4.s: src/Vector4.cpp.s
 
 # target to generate assembly for a file
 src/Vector4.cpp.s:
-	cd /home/amt3824/Git/Brickware-Engine/build && $(MAKE) -f BrickwareMath/CMakeFiles/BrickwareMath.dir/build.make BrickwareMath/CMakeFiles/BrickwareMath.dir/src/Vector4.cpp.s
+	cd /home/arsen/Code/Brickware-Engine/build && $(MAKE) -f BrickwareMath/CMakeFiles/BrickwareMath.dir/build.make BrickwareMath/CMakeFiles/BrickwareMath.dir/src/Vector4.cpp.s
 .PHONY : src/Vector4.cpp.s
 
 # Help Target
@@ -343,6 +343,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/amt3824/Git/Brickware-Engine/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/arsen/Code/Brickware-Engine/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

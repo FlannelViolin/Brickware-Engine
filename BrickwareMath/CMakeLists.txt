@@ -2,8 +2,14 @@ file(GLOB BRICKWARE_MATH_HEADERS "include/*.h")
 file(GLOB BRICKWARE_MATH_SOURCE "src/*.cpp")
 
 include_directories(include/)
+include_directories(SYSTEM)
 
-add_library(BrickwareMath SHARED ${BRICKWARE_MATH_HEADES} ${BRICKWARE_MATH_SOURCE})
+add_library(BrickwareMath SHARED ${BRICKWARE_MATH_HEADERS} ${BRICKWARE_MATH_SOURCE})
+
+#Need to link some basic libraries
+if(UNIX)
+	target_link_libraries(BrickwareMath m)
+endif(UNIX)
 
 set_property(TARGET BrickwareMath PROPERTY FOLDER "lib")
 

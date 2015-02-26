@@ -1,7 +1,10 @@
 #ifndef VECTOR3_H
 #define VECTOR3_H
 
+#define _USE_MATH_DEFINES
+
 #include <iostream>
+#include <cmath>
 
 #include "BrickwareMathDLL.h"
 

@@ -1,4 +1,4 @@
-# Install script for directory: /home/amt3824/Git/Brickware-Engine/BrickwareMath
+# Install script for directory: /home/arsen/Code/Brickware-Engine/BrickwareMath
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -33,25 +33,25 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  if(EXISTS "$ENV{DESTDIR}/home/amt3824/Git/Brickware-Engine/build/bin/libBrickwareMath.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/home/amt3824/Git/Brickware-Engine/build/bin/libBrickwareMath.so")
+  if(EXISTS "$ENV{DESTDIR}/home/arsen/Code/Brickware-Engine/build/bin/libBrickwareMath.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/arsen/Code/Brickware-Engine/build/bin/libBrickwareMath.so")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}/home/amt3824/Git/Brickware-Engine/build/bin/libBrickwareMath.so"
+         FILE "$ENV{DESTDIR}/home/arsen/Code/Brickware-Engine/build/bin/libBrickwareMath.so"
          RPATH "")
   endif()
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/amt3824/Git/Brickware-Engine/build/bin/libBrickwareMath.so")
+   "/home/arsen/Code/Brickware-Engine/build/bin/libBrickwareMath.so")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/amt3824/Git/Brickware-Engine/build/bin" TYPE SHARED_LIBRARY FILES "/home/amt3824/Git/Brickware-Engine/build/BrickwareMath/libBrickwareMath.so")
-  if(EXISTS "$ENV{DESTDIR}/home/amt3824/Git/Brickware-Engine/build/bin/libBrickwareMath.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/home/amt3824/Git/Brickware-Engine/build/bin/libBrickwareMath.so")
+file(INSTALL DESTINATION "/home/arsen/Code/Brickware-Engine/build/bin" TYPE SHARED_LIBRARY FILES "/home/arsen/Code/Brickware-Engine/build/BrickwareMath/libBrickwareMath.so")
+  if(EXISTS "$ENV{DESTDIR}/home/arsen/Code/Brickware-Engine/build/bin/libBrickwareMath.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/arsen/Code/Brickware-Engine/build/bin/libBrickwareMath.so")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/amt3824/Git/Brickware-Engine/build/bin/libBrickwareMath.so")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/arsen/Code/Brickware-Engine/build/bin/libBrickwareMath.so")
     endif()
   endif()
 endif()

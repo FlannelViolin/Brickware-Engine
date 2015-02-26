@@ -47,10 +47,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/amt3824/Git/Brickware-Engine
+CMAKE_SOURCE_DIR = /home/arsen/Code/Brickware-Engine
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/amt3824/Git/Brickware-Engine/build
+CMAKE_BINARY_DIR = /home/arsen/Code/Brickware-Engine/build
 
 #=============================================================================
 # Directory level rules for directory BrickwareMath
@@ -74,7 +74,7 @@ BrickwareMath/preinstall:
 BrickwareMath/CMakeFiles/BrickwareMath.dir/all:
 	$(MAKE) -f BrickwareMath/CMakeFiles/BrickwareMath.dir/build.make BrickwareMath/CMakeFiles/BrickwareMath.dir/depend
 	$(MAKE) -f BrickwareMath/CMakeFiles/BrickwareMath.dir/build.make BrickwareMath/CMakeFiles/BrickwareMath.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/amt3824/Git/Brickware-Engine/build/CMakeFiles  1 2 3 4 5 6
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/arsen/Code/Brickware-Engine/build/CMakeFiles  1 2 3 4 5 6
 	@echo "Built target BrickwareMath"
 .PHONY : BrickwareMath/CMakeFiles/BrickwareMath.dir/all
 
@@ -84,9 +84,9 @@ all: BrickwareMath/CMakeFiles/BrickwareMath.dir/all
 
 # Build rule for subdir invocation for target.
 BrickwareMath/CMakeFiles/BrickwareMath.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/amt3824/Git/Brickware-Engine/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/arsen/Code/Brickware-Engine/build/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 BrickwareMath/CMakeFiles/BrickwareMath.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/amt3824/Git/Brickware-Engine/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/arsen/Code/Brickware-Engine/build/CMakeFiles 0
 .PHONY : BrickwareMath/CMakeFiles/BrickwareMath.dir/rule
 
 # Convenience name for target.

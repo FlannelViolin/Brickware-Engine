@@ -5,6 +5,9 @@
 
 #include "BrickwareMathDLL.h"
 
+#define _USE_MATH_DEFINES
+#include <cmath>
+
 class BRICKWARE_MATH_API Vector2
 {
 public:

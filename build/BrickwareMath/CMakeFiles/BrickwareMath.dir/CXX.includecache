@@ -36,14 +36,10 @@ Vector4.h
 Matrix3.h
 ../BrickwareMath/include/Matrix3.h
 
-../BrickwareMath/include/Vector2.h
-iostream
--
-BrickwareMathDLL.h
-../BrickwareMath/include/BrickwareMathDLL.h
-
 ../BrickwareMath/include/Vector3.h
 iostream
+-
+cmath
 -
 BrickwareMathDLL.h
 ../BrickwareMath/include/BrickwareMathDLL.h
@@ -54,35 +50,31 @@ iostream
 BrickwareMathDLL.h
 ../BrickwareMath/include/BrickwareMathDLL.h
 
-/home/amt3824/Git/Brickware-Engine/BrickwareMath/src/Matrix3.cpp
+/home/arsen/Code/Brickware-Engine/BrickwareMath/src/Matrix3.cpp
 Matrix3.h
-/home/amt3824/Git/Brickware-Engine/BrickwareMath/src/Matrix3.h
+/home/arsen/Code/Brickware-Engine/BrickwareMath/src/Matrix3.h
 Matrix4.h
-/home/amt3824/Git/Brickware-Engine/BrickwareMath/src/Matrix4.h
+/home/arsen/Code/Brickware-Engine/BrickwareMath/src/Matrix4.h
 
-/home/amt3824/Git/Brickware-Engine/BrickwareMath/src/Matrix4.cpp
+/home/arsen/Code/Brickware-Engine/BrickwareMath/src/Matrix4.cpp
 Matrix4.h
-/home/amt3824/Git/Brickware-Engine/BrickwareMath/src/Matrix4.h
+/home/arsen/Code/Brickware-Engine/BrickwareMath/src/Matrix4.h
 Matrix3.h
-/home/amt3824/Git/Brickware-Engine/BrickwareMath/src/Matrix3.h
+/home/arsen/Code/Brickware-Engine/BrickwareMath/src/Matrix3.h
 
-/home/amt3824/Git/Brickware-Engine/BrickwareMath/src/Quaternion.cpp
+/home/arsen/Code/Brickware-Engine/BrickwareMath/src/Quaternion.cpp
 Quaternion.h
-/home/amt3824/Git/Brickware-Engine/BrickwareMath/src/Quaternion.h
+/home/arsen/Code/Brickware-Engine/BrickwareMath/src/Quaternion.h
 
-/home/amt3824/Git/Brickware-Engine/BrickwareMath/src/Vector2.cpp
-Vector2.h
-/home/amt3824/Git/Brickware-Engine/BrickwareMath/src/Vector2.h
-
-/home/amt3824/Git/Brickware-Engine/BrickwareMath/src/Vector3.cpp
+/home/arsen/Code/Brickware-Engine/BrickwareMath/src/Vector3.cpp
 Vector3.h
-/home/amt3824/Git/Brickware-Engine/BrickwareMath/src/Vector3.h
+/home/arsen/Code/Brickware-Engine/BrickwareMath/src/Vector3.h
 Vector4.h
-/home/amt3824/Git/Brickware-Engine/BrickwareMath/src/Vector4.h
+/home/arsen/Code/Brickware-Engine/BrickwareMath/src/Vector4.h
 
-/home/amt3824/Git/Brickware-Engine/BrickwareMath/src/Vector4.cpp
+/home/arsen/Code/Brickware-Engine/BrickwareMath/src/Vector4.cpp
 Vector4.h
-/home/amt3824/Git/Brickware-Engine/BrickwareMath/src/Vector4.h
+/home/arsen/Code/Brickware-Engine/BrickwareMath/src/Vector4.h
 Vector3.h
-/home/amt3824/Git/Brickware-Engine/BrickwareMath/src/Vector3.h
+/home/arsen/Code/Brickware-Engine/BrickwareMath/src/Vector3.h
 

@@ -1,4 +1,4 @@
-# Install script for directory: /home/amt3824/Git/Brickware-Engine
+# Install script for directory: /home/arsen/Code/Brickware-Engine
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/amt3824/Git/Brickware-Engine/build/BrickwareMath/cmake_install.cmake")
+  include("/home/arsen/Code/Brickware-Engine/build/BrickwareMath/cmake_install.cmake")
 
 endif()
 
@@ -44,7 +44,7 @@ else()
   set(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
 endif()
 
-file(WRITE "/home/amt3824/Git/Brickware-Engine/build/${CMAKE_INSTALL_MANIFEST}" "")
+file(WRITE "/home/arsen/Code/Brickware-Engine/build/${CMAKE_INSTALL_MANIFEST}" "")
 foreach(file ${CMAKE_INSTALL_MANIFEST_FILES})
-  file(APPEND "/home/amt3824/Git/Brickware-Engine/build/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
+  file(APPEND "/home/arsen/Code/Brickware-Engine/build/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
 endforeach()
