@@ -17,10 +17,11 @@
 #endif
 
 #define GLFW_INCLUDE_GLU
-#include <glfw3.h>
+#include <GLFW/glfw3.h>
 #endif
 
 class GameObject;
+class Material;
 
 #include "Shader.h"
 #include "Component.h"

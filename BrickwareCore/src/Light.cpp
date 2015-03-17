@@ -1,6 +1,6 @@
 #define BRICKWARE_CORE_EXPORTS
 
-#include "light.h"
+#include "Light.h"
 
 Light::Light()
 {

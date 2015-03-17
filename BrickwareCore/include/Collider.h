@@ -18,7 +18,7 @@ class Bounds;
 #include "Component.h"
 
 //Used to avoid warnings about exporting std::vectors
-template class BRICKWARE_CORE_API std::vector < Vector3 > ;
+//template class BRICKWARE_CORE_API std::vector < Vector3 > ;
 
 class BRICKWARE_CORE_API Collider : public Component
 {

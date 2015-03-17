@@ -15,7 +15,7 @@
 #endif
 
 #define GLFW_INCLUDE_GLU
-#include <glfw3.h>
+#include <GLFW/glfw3.h>
 #elif defined(D3D_SUPPORT)
 #include <windows.h>
 #endif

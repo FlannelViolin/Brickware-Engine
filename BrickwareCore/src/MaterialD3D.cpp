@@ -1,10 +1,11 @@
 #define BRICKWARE_CORE_EXPORTS
 
+#ifdef D3D_SUPPORT
+
 #include "Material.h"
 
 #include "Game.h"
 
-#ifdef D3D_SUPPORT
 std::vector<ID3D11Buffer*> Material::getConstantBuffers(){ return shader->constantBuffers; }
 std::vector<char*> Material::getConstantBufferData(){ return shader->constantBufferData; }
 

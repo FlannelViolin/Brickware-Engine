@@ -1,6 +1,9 @@
 file(GLOB BRICKWARE_MATH_HEADERS "include/*.h")
 file(GLOB BRICKWARE_MATH_SOURCE "src/*.cpp")
 
+#C++ 11
+set(CMAKE_CXX_FLAGS "-std=c++11 ${CMAKE_CXX_FLAGS}")
+
 include_directories(include/)
 include_directories(SYSTEM)
 
