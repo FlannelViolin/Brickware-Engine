@@ -2,7 +2,7 @@ file(GLOB BRICKWARE_CORE_HEADERS "include/*.h")
 file(GLOB BRICKWARE_CORE_SOURCE "src/*.cpp")
 
 #C++ 11
-set(CMAKE_CXX_FLAGS "-std=c++11 ${CMAKE_CXX_FLAGS}")
+set(CMAKE_CXX_FLAGS "-std=c++11 -g ${CMAKE_CXX_FLAGS}")
 
 include_directories("include/")
 include_directories("../BrickwareMath/include")

@@ -177,7 +177,9 @@ void Game::handleInput()
 bool Game::initGL()
 {
 	glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
-	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR,3);
+	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR,1);
+	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_COMPAT_PROFILE);
 
 	//Attempt initialization
 	if (!glfwInit())
@@ -204,9 +206,7 @@ bool Game::initGL()
 
 	glfwSetInputMode(glWindow, GLFW_CURSOR, GLFW_CURSOR_HIDDEN);
 
-#ifdef _WIN32
 	glewInit();
-#endif
 
 	return true;
 }
@@ -660,3 +660,4 @@ Game::~Game()
 {
 	PrimitiveManager::Destroy();
 }
+

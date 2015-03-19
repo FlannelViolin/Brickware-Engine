@@ -143,18 +143,141 @@ depend:
 	cd /home/arsen/Code/Brickware-Engine && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+# Convenience name for target.
+BrickwareTest/CMakeFiles/BrickwareTest.dir/rule:
+	cd /home/arsen/Code/Brickware-Engine && $(MAKE) -f CMakeFiles/Makefile2 BrickwareTest/CMakeFiles/BrickwareTest.dir/rule
+.PHONY : BrickwareTest/CMakeFiles/BrickwareTest.dir/rule
+
+# Convenience name for target.
+BrickwareTest: BrickwareTest/CMakeFiles/BrickwareTest.dir/rule
+.PHONY : BrickwareTest
+
+# fast build rule for target.
+BrickwareTest/fast:
+	cd /home/arsen/Code/Brickware-Engine && $(MAKE) -f BrickwareTest/CMakeFiles/BrickwareTest.dir/build.make BrickwareTest/CMakeFiles/BrickwareTest.dir/build
+.PHONY : BrickwareTest/fast
+
+src/Main.o: src/Main.cpp.o
+.PHONY : src/Main.o
+
+# target to build an object file
+src/Main.cpp.o:
+	cd /home/arsen/Code/Brickware-Engine && $(MAKE) -f BrickwareTest/CMakeFiles/BrickwareTest.dir/build.make BrickwareTest/CMakeFiles/BrickwareTest.dir/src/Main.cpp.o
+.PHONY : src/Main.cpp.o
+
+src/Main.i: src/Main.cpp.i
+.PHONY : src/Main.i
+
+# target to preprocess a source file
+src/Main.cpp.i:
+	cd /home/arsen/Code/Brickware-Engine && $(MAKE) -f BrickwareTest/CMakeFiles/BrickwareTest.dir/build.make BrickwareTest/CMakeFiles/BrickwareTest.dir/src/Main.cpp.i
+.PHONY : src/Main.cpp.i
+
+src/Main.s: src/Main.cpp.s
+.PHONY : src/Main.s
+
+# target to generate assembly for a file
+src/Main.cpp.s:
+	cd /home/arsen/Code/Brickware-Engine && $(MAKE) -f BrickwareTest/CMakeFiles/BrickwareTest.dir/build.make BrickwareTest/CMakeFiles/BrickwareTest.dir/src/Main.cpp.s
+.PHONY : src/Main.cpp.s
+
+src/Spawner.o: src/Spawner.cpp.o
+.PHONY : src/Spawner.o
+
+# target to build an object file
+src/Spawner.cpp.o:
+	cd /home/arsen/Code/Brickware-Engine && $(MAKE) -f BrickwareTest/CMakeFiles/BrickwareTest.dir/build.make BrickwareTest/CMakeFiles/BrickwareTest.dir/src/Spawner.cpp.o
+.PHONY : src/Spawner.cpp.o
+
+src/Spawner.i: src/Spawner.cpp.i
+.PHONY : src/Spawner.i
+
+# target to preprocess a source file
+src/Spawner.cpp.i:
+	cd /home/arsen/Code/Brickware-Engine && $(MAKE) -f BrickwareTest/CMakeFiles/BrickwareTest.dir/build.make BrickwareTest/CMakeFiles/BrickwareTest.dir/src/Spawner.cpp.i
+.PHONY : src/Spawner.cpp.i
+
+src/Spawner.s: src/Spawner.cpp.s
+.PHONY : src/Spawner.s
+
+# target to generate assembly for a file
+src/Spawner.cpp.s:
+	cd /home/arsen/Code/Brickware-Engine && $(MAKE) -f BrickwareTest/CMakeFiles/BrickwareTest.dir/build.make BrickwareTest/CMakeFiles/BrickwareTest.dir/src/Spawner.cpp.s
+.PHONY : src/Spawner.cpp.s
+
+src/Spin.o: src/Spin.cpp.o
+.PHONY : src/Spin.o
+
+# target to build an object file
+src/Spin.cpp.o:
+	cd /home/arsen/Code/Brickware-Engine && $(MAKE) -f BrickwareTest/CMakeFiles/BrickwareTest.dir/build.make BrickwareTest/CMakeFiles/BrickwareTest.dir/src/Spin.cpp.o
+.PHONY : src/Spin.cpp.o
+
+src/Spin.i: src/Spin.cpp.i
+.PHONY : src/Spin.i
+
+# target to preprocess a source file
+src/Spin.cpp.i:
+	cd /home/arsen/Code/Brickware-Engine && $(MAKE) -f BrickwareTest/CMakeFiles/BrickwareTest.dir/build.make BrickwareTest/CMakeFiles/BrickwareTest.dir/src/Spin.cpp.i
+.PHONY : src/Spin.cpp.i
+
+src/Spin.s: src/Spin.cpp.s
+.PHONY : src/Spin.s
+
+# target to generate assembly for a file
+src/Spin.cpp.s:
+	cd /home/arsen/Code/Brickware-Engine && $(MAKE) -f BrickwareTest/CMakeFiles/BrickwareTest.dir/build.make BrickwareTest/CMakeFiles/BrickwareTest.dir/src/Spin.cpp.s
+.PHONY : src/Spin.cpp.s
+
+src/TestGame.o: src/TestGame.cpp.o
+.PHONY : src/TestGame.o
+
+# target to build an object file
+src/TestGame.cpp.o:
+	cd /home/arsen/Code/Brickware-Engine && $(MAKE) -f BrickwareTest/CMakeFiles/BrickwareTest.dir/build.make BrickwareTest/CMakeFiles/BrickwareTest.dir/src/TestGame.cpp.o
+.PHONY : src/TestGame.cpp.o
+
+src/TestGame.i: src/TestGame.cpp.i
+.PHONY : src/TestGame.i
+
+# target to preprocess a source file
+src/TestGame.cpp.i:
+	cd /home/arsen/Code/Brickware-Engine && $(MAKE) -f BrickwareTest/CMakeFiles/BrickwareTest.dir/build.make BrickwareTest/CMakeFiles/BrickwareTest.dir/src/TestGame.cpp.i
+.PHONY : src/TestGame.cpp.i
+
+src/TestGame.s: src/TestGame.cpp.s
+.PHONY : src/TestGame.s
+
+# target to generate assembly for a file
+src/TestGame.cpp.s:
+	cd /home/arsen/Code/Brickware-Engine && $(MAKE) -f BrickwareTest/CMakeFiles/BrickwareTest.dir/build.make BrickwareTest/CMakeFiles/BrickwareTest.dir/src/TestGame.cpp.s
+.PHONY : src/TestGame.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... BrickwareTest"
 	@echo "... edit_cache"
 	@echo "... install"
 	@echo "... install/local"
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... src/Main.o"
+	@echo "... src/Main.i"
+	@echo "... src/Main.s"
+	@echo "... src/Spawner.o"
+	@echo "... src/Spawner.i"
+	@echo "... src/Spawner.s"
+	@echo "... src/Spin.o"
+	@echo "... src/Spin.i"
+	@echo "... src/Spin.s"
+	@echo "... src/TestGame.o"
+	@echo "... src/TestGame.i"
+	@echo "... src/TestGame.s"
 .PHONY : help
 
 
