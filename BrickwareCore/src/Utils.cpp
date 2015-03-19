@@ -7,12 +7,12 @@
 */
 
 //return a vector of c-strings split by a delimeter
-vector<char*> Utils::stringSplit(char* toSplit, char* delimiter)
+vector<char*> Utils::stringSplit(const char* toSplit, const char* delimiter)
 {
 	//Modify the given string to add a delimeter to the end of the string so that the last value will be parsed
-	char* toSplitMod = new char[strlen(toSplit) + 1];
+	char* toSplitMod = new char[strlen(toSplit) + strlen(delimiter) + 1];
 	strcpy(toSplitMod, toSplit);
-	strcat(toSplitMod, &delimiter[0]);
+	strcat(toSplitMod, delimiter);
 
 	vector<char*> split;
 

@@ -34,7 +34,7 @@ using namespace std;
 class Utils
 {
 public:
-	static BRICKWARE_CORE_API vector<char*> stringSplit(char* toSplit, char* delimiter);
+	static BRICKWARE_CORE_API vector<char*> stringSplit(const char* toSplit, const char* delimiter);
 
 	static BRICKWARE_CORE_API char* textFileRead(char *fn);
 	static BRICKWARE_CORE_API int textFileWrite(char *fn, char *s);
